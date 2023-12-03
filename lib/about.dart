@@ -30,6 +30,7 @@ class _AboutState extends State<About> {
   var  email="salahuddinrahmani4040@gmail.com";
   var lastName=" Rahmani";
   var telegram="tm.salahuddin4079";
+  var edgucation="Edgucation : Egineer Of Arcitictuer";
   // Gender? selectedGender;
 
  Gender selectedGender =Gender.sColor;
@@ -82,6 +83,7 @@ class _AboutState extends State<About> {
                       phone="093794317864";
                       email="salahuddinrahmani4040@gmail.com";
                       telegram= "tm.salahuddin4079";
+                      edgucation="Edgucation : Egineer Of Arcitictuer";
                     });
 
 
@@ -105,13 +107,14 @@ class _AboutState extends State<About> {
                   setState(() {
                     selectedGender = Gender.mColor;
 
-                    text = "Mohamad";
-                    name="Mohamad";
-                    lastName="Ahmadi";
-                    birth="Birthday :  1378/8/5";
-                    phone="093745456645";
+                    text = "Saeed Mohamad";
+                    name="Saeed Mohamad";
+                    lastName="Sadaat";
+                    birth="Birthday :  1379/8/5";
+                    phone="093729720194";
                     email="mohad@gmail.com";
                     telegram= "tm.mohamajhja";
+                    edgucation="Edgucation : Softwer Computer scince";
                   });
                 },
                 child: Container(
@@ -122,7 +125,7 @@ class _AboutState extends State<About> {
                   child: CircleAvatar(
                     backgroundColor:selectedGender==Gender.mColor ? color1:color,
                     radius: 80,
-                    child: CircleAvatar(backgroundImage: AssetImage("images/asli2.jpg"),
+                    child: CircleAvatar(backgroundImage: AssetImage("images/3433882706426402~2.jpg"),
                       radius: 70,
 
                     ),
@@ -133,11 +136,11 @@ class _AboutState extends State<About> {
           ),
           SizedBox(height: 44,),
           Text(text,style: TextStyle(
-              fontSize: 30,  color: Colors.white),),
+              fontSize: 44, fontFamily: "font1", color: Colors.white,fontWeight: FontWeight.bold),),
           SizedBox(height: 10,child: Divider(color: Colors.white,),width: 300,),
           SizedBox(height: 10,child: Divider(color: Colors.white,),width: 200,),
           SizedBox(height: 10,child: Divider(color: Colors.white,),width: 100,),
-          SizedBox(height: 10,child: Divider(color: Colors.red,),width: 50,),
+          SizedBox(height: 10,child: Divider(color: Colors.white,),width: 50,),
 
           SizedBox(height: 33,),
           Padding(
@@ -245,12 +248,12 @@ class _AboutState extends State<About> {
                   child: ListTile(
                     tileColor: Color.fromRGBO(10, 80, 53, 1.0),
                     leading: Icon(
-                      Icons.email_outlined,
+                      Icons.engineering,
                       color: Colors.white,
                       size: 44,
                     ),
                     title: Text(
-                      email,
+                      edgucation,
                       style: TextStyle(fontSize: 25, color: Colors.white),
                     ),
                   ),
@@ -289,12 +292,12 @@ class _AboutState extends State<About> {
                   child: ListTile(
                     tileColor: Color.fromRGBO(10, 80, 53, 1.0),
                     leading: Icon(
-                      Icons.facebook,
+                      Icons.email_outlined,
                       color: Colors.white,
                       size: 44,
                     ),
                     title: Text(
-                      "tm.salahuddin4079",
+                      email,
                       style: TextStyle(fontSize: 25, color: Colors.white),
                     ),
                   ),

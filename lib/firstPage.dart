@@ -18,7 +18,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    Future.delayed(Duration(seconds: 3), () {
+    Future.delayed(Duration(seconds: 4), () {
       Navigator.push(context, MaterialPageRoute(builder: (bb) {
         return Hadis();
       }));
@@ -41,7 +41,7 @@ class _MyAppState extends State<MyApp> {
 
                   mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                 Image.asset("images/fdsa.png",width:300,height:300,),
+                 Container(child: Image.asset("images/fdsa.png",width:300,height:300,)),
 
                 Text(
                   textDirection: TextDirection.rtl,
